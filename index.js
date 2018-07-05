@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 exports.plugin = {
   pkg: require('./package.json'),
-  register: async function (server, options) {
+  register: async function (server, options = {}) {
     const connections = {}
     Object.keys(options).forEach(key => {
       const item = options[key]
