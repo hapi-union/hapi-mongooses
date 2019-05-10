@@ -10,8 +10,9 @@ exports.plugin = {
       const connection = mongoose.createConnection(args[0], args[1])
       connections[key] = connection
     })
-    const { Schema } = mongoose
+    const { Schema, Types } = mongoose
     server.expose('mongoose', mongoose)
+    server.expose('Types', Types)
     server.expose('Schema', Schema)
     // TODO delete expose of ObjectId
     server.expose('ObjectId', mongoose.Types.ObjectId)

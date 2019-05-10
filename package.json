@@ -1,6 +1,6 @@
 {
   "name": "hapi-mongooses",
-  "version": "0.2.2",
+  "version": "0.2.4",
   "description": "一款用于hapi中多mongoose连接的hapi插件",
   "main": "index.js",
   "scripts": {
@@ -33,6 +33,6 @@
     "standard": "^11.0.1"
   },
   "dependencies": {
-    "mongoose": "^5.2.4"
+    "mongoose": "^5.4.16"
   }
 }
